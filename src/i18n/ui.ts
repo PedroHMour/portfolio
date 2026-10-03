@@ -9,6 +9,7 @@ export const profile = {
   email: 'henriquesilvamoura81@gmail.com',
   github: 'https://github.com/PedroHMour',
   linkedin: 'https://www.linkedin.com/in/pedro-h-aab8a514b/',
+  freelas99: 'https://www.99freelas.com.br/user/pedrohenrique-482',
 };
 
 type Service = { icon: string; title: string; text: string };
