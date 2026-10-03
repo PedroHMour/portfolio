@@ -22,7 +22,10 @@ const nav = [
 <Base lang={lang}>
   <header class="sticky top-0 z-50 border-b border-line/60 bg-bg/80 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-      <a href="#top" class="font-extrabold tracking-tight">{profile.name}<span class="text-accent">.</span></a>
+      <a href="#top" class="flex items-center gap-2.5 font-extrabold tracking-tight">
+        <img src={`${base}/logo-mark.png`} alt="" width="38" height="31" class="h-7 w-auto" />
+        {profile.name}
+      </a>
       <nav class="hidden gap-6 text-sm text-muted md:flex" aria-label="Principal">
         {nav.map(([id, label]) => <a href={`#${id}`} class="hover:text-fg">{label}</a>)}
       </nav>
