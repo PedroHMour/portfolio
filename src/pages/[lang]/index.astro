@@ -40,7 +40,7 @@ const nav = [
   </header>
 
   <main id="top">
-    <section class="section grid items-center gap-10 pt-16 md:grid-cols-[1.4fr_1fr] md:pt-24">
+    <section class="section pt-16 md:pt-28">
       <div>
         <span class="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted">
           <span class="size-2 rounded-full bg-accent-2"></span>{t.hero.badge}
@@ -54,12 +54,6 @@ const nav = [
           <a href={`${base}/cv.pdf`} download class="btn btn-ghost">{t.hero.cv}</a>
         </div>
       </div>
-      <img
-        src={`${base}/profile.png`}
-        alt={profile.name}
-        width="400" height="400"
-        class="mx-auto aspect-square w-64 rounded-3xl border border-line object-cover md:w-full md:max-w-sm"
-      />
     </section>
 
     <section id="services" class="section">
