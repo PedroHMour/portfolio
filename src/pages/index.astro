@@ -1,0 +1,19 @@
+---
+import { defaultLang, languages } from '../i18n/ui';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fallback = `${base}/${defaultLang}/`;
+---
+<!doctype html>
+<html lang={defaultLang}>
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta http-equiv="refresh" content={`0; url=${fallback}`} />
+    <link rel="canonical" href={fallback} />
+    <script is:inline define:vars={{ base, langs: Object.keys(languages), fallback }}>
+      const pref = (navigator.language || '').slice(0, 2);
+      location.replace(langs.includes(pref) ? `${base}/${pref}/` : fallback);
+    </script>
+  </head>
+  <body></body>
+</html>
